@@ -1,0 +1,41 @@
+{ 
+  "movies" =[
+	{
+		"title":"The Godfather",
+		"image":"https://www.biography.com/.image/t_share/MTY4OTUyODMyNTUxMDM2Mzky/hero-image-the-godfather-gettyimages-159837887.jpg",
+		"year":"1972",
+		"genre":"Drama",
+		"director":"Francis Ford Capolla"
+	},
+	{
+		"title":"Superbad",
+		"year":"2007",
+		"genre":"Comedy",
+		"director":"Greg Mottola"
+	},
+	{
+		"title":"The Departed",
+		"year":"2006",
+		"genre":"Drama",
+		"director":"Martin Scorsese"
+	},
+	{
+		"title":"Saving Private Ryan",
+		"year":"1998",
+		"genre":"Action",
+		"director":"Steven Spielberg"
+	},
+	{
+		"title":"The Expendables",
+		"year":"2010",
+		"genre":"Action",
+		"director":"Sylvester Stallone"
+	},
+	{
+    "title":"Avengers",
+		"year:"2017",
+		"genre":"Action",
+		"director":"Hulk Hogan"
+	}
+	]
+}
