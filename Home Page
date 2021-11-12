@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>My Movies</title>
+
+<style>
+	body {
+	  background-color: lightblue;
+	}
+	
+	h1{
+	    color: white;
+		text-align:center;
+		font-family: verdana;
+	}
+	
+	h2{
+		color: #89A0E1;
+		
+	}
+	
+	h4{
+		margin:0;
+		padding:5px;
+		background:#f4f4f4;
+	}
+	
+	li{
+		list-style:none;
+		padding-left:5px;
+		color: #89A0E1;
+	}
+	
+	.card {
+	      justify-content: center;
+	      padding: 1px 10px 15px;
+		  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);	 
+		  border-radius: 10px;
+		  text-align: center;
+		  background-color: white;
+		  
+    }
+	
+	.column {
+	      display: grid;
+		  grid-template-columns: 200px 200px;
+		  grid-row: auto auto;
+		  grid-column-gap: 20px;
+		  grid-row-gap: 40px;
+		  justify-content: center;
+      
+    }
+	
+	#container{
+		 width:600px;
+    	 margin:auto;
+		 overflow:hidden
+	}
+	
+    @media screen and (max-width: 600px) {
+		  .column {
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+  }
+	
+</style>
+
+<script>
+
+var movies =[
+	{
+		title:"The Godfather",
+		image:"https://www.biography.com/.image/t_share/MTY4OTUyODMyNTUxMDM2Mzky/hero-image-the-godfather-gettyimages-159837887.jpg",
+		year:"1972",
+		genre:"Drama",
+		director:"Francis Ford Capolla"
+	},
+	{
+		title:"Superbad",
+		year:"2007",
+		genre:"Comedy",
+		director:"Greg Mottola"
+	},
+	{
+		title:"The Departed",
+		year:"2006",
+		genre:"Drama",
+		director:"Martin Scorsese"
+	},
+	{
+		title:"Saving Private Ryan",
+		year:"1998",
+		genre:"Action",
+		director:"Steven Spielberg"
+	},
+	{
+		title:"The Expendables",
+		year:"2010",
+		genre:"Action",
+		director:"Sylvester Stallone"
+	},
+	{
+		title:"Avengers",
+		year:"2017",
+		genre:"Action",
+		director:"Hulk Hogan"
+	}
+	]
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>My Favourite Movies</h1>
+	  <ul>
+	    <div class="column">
+			  <script>	
+			    for(i=0;i<movies.length;i++)	
+				  { 
+				    
+				    document.write('<div class="card">');
+					document.write('<h2>'+movies[i].title +'</h2>');
+					
+					// document.createElement('<img src="">'); 
+					document.createElement("img");
+                    /*img.src = movies[i].image;
+					document.createElement('<span>'+img+'</span>'); 
+                    */
+					
+					document.write('<li>'+movies[i].year +'</li>');
+					document.write('<li>'+movies[i].genre +'</li>');
+					document.write('<li>'+movies[i].director +'</li>');
+					document.write('</div>');
+				
+				  }
+			  </script>
+		</div>
+   </ul>	
+</div>
+
+</body>
+</html>
